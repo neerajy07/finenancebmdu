@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<style>
+  /* navbar  */
+  body {
+    background-color: #f8f9fa; 
+  }
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  .navbar {
+    justify-content: center; 
+    background-color: #fff;
+  }
+  .nav-link{
+    color: #777777;
+  }
+  
+   .navbar-nav a:hover{
+    color:#90c404;
+  }
+  .navbar-nav .nav-item .nav-link:hover{
+    color: #90c404;
+  }
+  .navbar-nav .nav-item .nav-link.active{
+    color: #90c404;
+  }
+</style>
+<style>
+  .btn-primary{
+    background-color: #90c404;
+    border-color: #90c404;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+  .btn-primary:hover{
+    background-color:white;
+    color: #90c404;
+    border-color: #90c404;
+    border-width: 2px;
+  }
+  .btn-outline-primary{
+    color:#90c404;
+    background-color:whitesmoke;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: 2px solid #90c404;
+    
+  }
+  .btn-outline-primary:hover{
+    color: white;
+    background-color: #90c404;
+    border-color: #90c404;
+    
+  }
+  .card{
+
+    margin-right: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #0081c4;
+}
+.discover{
+    font-size: 15px;
+    padding: .7rem 8rem;
+    margin-bottom: 2rem;
+}
+</style>
+
+<style>
+  .card {
+    position: relative;
+    overflow: hidden;
+    /* transition: transform 0.3s ease-in-out; */
+  }
+  .card:hover {
+    /* transform: translateY(-10px); */
+    border-bottom: 3px solid #90c404;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  .card-title {
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    text-align: start;
+    color:#555;
+  }
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#f5f6f7;
+    color: #444444;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:start;
+    
+  }
+  .card:hover .card-overlay {
+    opacity: 1;
+  }
+  .card-overlay-content {
+    padding: 20px;
+  }
+  .content{
+    text-align:start;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .content p{
+    font-size: 15px;
+    text-align: start;
+  }
+  .content i{
+    font-size:25px;
+    padding:.5rem;
+  }
+  .content, .form {
+      padding: 20px;
+    }
+    /* Additional styling for the form */
+    .form {
+      background-color: #f8f9fa;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+    }
+    .form-heading {
+      
+      color:#000
+      
+      
+    }
+    .form-body {
+      padding: 20px;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      font-weight: 500;
+    }
+    .form-group .input-group-prepend {
+      width: 40px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+    .form-control {
+      padding-left: 45px; /* Adjust this value to align text properly */
+    }
+</style>
+<body>
+  <section class="banner-section">
+    
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="financialbanner2.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="banner3.jpeg" class="d-block w-100" alt="...">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="bannerContent" data-aos="fade-up"
+      data-aos-duration="2000">
+      <h1>Great website adds Great Value</h1>
+      <p>offer full service digital media solution to your clients.</p>
+      <button type="button" class="btn btn-primary">CONTACT US </button>
+      <button type="button" class="btn btn-outline-primary">OUR PORTFOLIO </button>
+    </div>
+
+  </section>
+    
+  <div class="container">
+    <h2>Services We Provide</h2>
+    <hr>
+    <div class="card-group pb-5">
+      <div class="card">
+        <i class='bx bx-palette'></i>
+        <div class="card-body">
+          <h3 class="card-title">Design</h3>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content </p>
+        
+        </div>
+        <div class="card-overlay">
+          <div class="card-overlay-content">
+            <li> <i class='bx bxs-palette' ></i>logo & Design</li>
+            <li><i class='bx bx-devices'></i>mobile Design</li>
+            <li><i class='bx bx-laptop'></i>website Design</li>
+            <li> <i class='bx bxl-graphql'></i>graphic Design</li>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bx-devices'></i>
+        <div class="card-body">
+          <h3 class="card-title">Develepment</h3>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content</p>        
+        </div>
+        <div class="card-overlay">
+          <div class="card-overlay-content">
+            <li> <i class='bx bxs-conversation'></i>content Managment system</li>
+            <li><i class='bx bx-mobile-alt'></i>mobile App Develepment</li>
+            <li><i class='bx bx-cart'></i>eCommerce</li>
+            <li><i class='bx bxl-microsoft'></i>Software Develepment</li>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+       
+        <i class='bx bx-line-chart'></i>
+        <div class="card-body">
+          <h3 class="card-title">Online marketing</h3>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content</p>
+       
+        </div>
+        <div class="card-overlay">
+          <div class="card-overlay-content">
+            <li><i class='bx bx-search'></i>Search engine Optimization</li>
+            <li><i class='bx bx-pointer'></i>Pay-per-click</li>
+            <li><i class='bx bx-envelope'></i>Email marketing</li>
+            <li><i class='bx bxl-meta'></i>Social Media Marketing</li>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!-- Featured section  -->
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <hr>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#">All Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">eCommerce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">logo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mobile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Social Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vedio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Website</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="card-group Featured pb-5">
+      
+      <div class="card">
+        <img src="box.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Google</h3>
+          <p class="card-text">logo</p>
+        
+        </div>
+        <div class="card-overlay">
+          <div class="card-overlay-content">
+            <button type="button" class="btn btn-outline-primary">Discover</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="mobile-2-1-360x260.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">VMWare</h3>
+          <p class="card-text">mobile</p>        
+        </div>
+        <div class="card-overlay">
+          <div class="card-overlay-content">
+            <button type="button" class="btn btn-outline-primary">Discover</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+       
+        <img src="video-3-1-360x260.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Hulu</h3>
+          <p class="card-text">Vedio</p>
+       
+        </div>
+        <div class="card-overlay">
+          <div class="card-overlay-content">
+            <button type="button" class="btn btn-outline-primary">Discover</button>
+          </div>
+        </div>
+      </div>
+    <div class="card-group Featured pt-5">
+      <div class="card">
+          <img src="website-7-1-360x260.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Square</h3>
+            <p class="card-text">Websie</p>
+          
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-content">
+              <button type="button" class="btn btn-outline-primary">Discover</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ecommerce-1-1-360x260.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Gumtree</h3>
+            <p class="card-text">ecommerce</p>        
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-content">
+              <button type="button" class="btn btn-outline-primary">Discover</button>
+            </div>
+          </div>
+        </div>
+        <div class="card"> 
+          <img src="social-3-1-360x260.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Apple</h3>
+            <p class="card-text">social Media </p>
+          </div>
+          
+          <div class="card-overlay">
+            <div class="card-overlay-content">
+              <button type="button" class="btn btn-outline-primary">Discover</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div> 
+    <button type="button" class="btn btn-primary discover center-btn"> Discover More </button>
+
+  </div>
+  <div class="container mt-5">
+    <h2>Reasons for Choosing Us</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Content Section -->
+        <div class="content">
+          <h4>We Lead from the Front</h4>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <p> <i class='bx bx-user'></i> Expert guidance to build your start-up.</p>
+          <p> <i class='bx bx-money-withdraw'></i>Save time, resource and money!</p>
+          <p> <i class='bx bx-flag' ></i> Create endless business possibilites!</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Form Section -->
+        <div class="form">
+          <div class="form-heading">
+            <h4 class="text-start">Get a free Quote</h4>
+          </div>
+          <div class="form-body">
+            <form>
+              <div class="form-group">
+               
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+               
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                
+                <input type="tel" class="form-control" id="phone" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                
+                <input type="url" class="form-control" id="website" placeholder="Website">
+              </div>
+              <div class="form-group">
+               
+                <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Get A Quote</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <hr>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="counter">
+          <h4><span class="count" data-target="290">0</span> HAPPY CLIENTS</h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="counter">
+          <h4><span class="count" data-target="321">0</span> PROJECTS COMPLETED</h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="counter">
+          <h4><span class="count" data-target="21400">0</span> TOTAL HOURS</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h2>Teamwork Makes the Dream Work</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="team-1-1-360x300.jpg" class="card-img-top" alt="Image 1">
+            <div class="overlay">
+              <button class="btn btn-primary"> View Details </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Steve Johnson</h5>
+            <p class="card-text">Chief Exicutive Officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="team-2-1-360x300.jpg" class="card-img-top" alt="Image 2">
+            <div class="overlay">
+              <button class="btn btn-primary">View Details</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Olivia Jackson</h5>
+            <p class="card-text">Chief Operating Officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="team-4-1-360x300.jpg" class="card-img-top" alt="Image 3">
+            <div class="overlay">
+              <button class="btn btn-primary">View Details</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">John Kenny</h5>
+            <p class="card-text">Head of Marketing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="team-5-1-360x300.jpg" class="card-img-top" alt="Image 1">
+            <div class="overlay">
+              <button class="btn btn-primary"> View Details </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Steve Johnson</h5>
+            <p class="card-text">Chief Exicutive Officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="team-3-1-1-360x300.jpg" class="card-img-top" alt="Image 2">
+            <div class="overlay">
+              <button class="btn btn-primary">View Details</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Olivia Jackson</h5>
+            <p class="card-text">Chief Operating Officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="team-6-1-360x300.jpg" class="card-img-top" alt="Image 3">
+            <div class="overlay">
+              <button class="btn btn-primary">View Details</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">John Kenny</h5>
+            <p class="card-text">Head of Marketing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h2>Pricing Plans for Businesses of All Sizes</h2>
+    <hr>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center"><span class="flaticon-small-business"></span> Small Business</h4>
+            <ul class="list-group list-group-flush">
+              <h1 class="list-group-item"><sup>$</sup>4,999</h1> 
+              <li >10 Pages Responsive Website</li>
+              <li>5 PPC Campaigns</li>
+              <li>10 SEO Keywords</li>
+              <li>5 Facebook Campaigns</li>
+              <li>2 Video Campaigns</li>
+            </ul>
+          </div>
+          
+        </div>
+        <button type="button" class="btn btn-primary kick-btn">Kickstart Your Business </button>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center"><span class="flaticon-medium-business"></span> Medium Business</h4>
+            <ul class="list-group list-group-flush">
+             <h1 class="list-group-item"><sup>$</sup>9,999</h1> 
+              <li >20 Pages Responsive Website</li>
+              <li >10 PPC Campaigns</li>
+              <li >25 SEO Keywords</li>
+              <li >10 Facebook Campaigns</li>
+              <li >5 Video Campaigns</li>
+            </ul>
+            
+          </div>
+        </div>
+         <button type="submit" class="btn btn-primary kick-btn">Kickstart Your Business</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center"><span class="flaticon-corporate-business"></span> Corporate Business</h4>
+            <ul class="list-group list-group-flush">
+             <h1 class="list-group-item">call</h1>
+              <li >Unlimited Pages Responsive Website</li>
+              <li >Unlimited PPC Campaigns</li>
+              <li >Unlimited SEO Keywords</li>
+              <li >Unlimited Facebook Campaigns</li>
+              <li >Unlimited Video Campaigns</li>
+            </ul>
+            
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary kick-btn">Kickstart Your Business</button>
+      </div>
+    </div>
+  </div>
+    <div class="container mt-5 pb-5">
+      <h2>Latest News</h2>
+      <hr>
+      <div class="card-group">
+        <div class="card">
+          <img src="blog-1-360x260.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">November 22, 2017</small></p>
+            <h5 class="card-title">Digital Marketo Launched Their Website Prototyping App</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="blog-details3-360x260.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">November 10, 2017</small></p>
+            <h5 class="card-title">How to Appear in Google’s #1 Page</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+           
+          </div>
+        </div>
+        <div class="card">
+          <img src="web-developement-1-360x260.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">November 10, 2017</small></p>
+            <h5 class="card-title">How to Become A Software Engineer?</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+           
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary discover center-btn mt-5"> Read More Blog </button>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <!-- Embed Google Map -->
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509639!2d144.9559283156167!3d-37.81720974202174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d4f1e7b4f029!2sEnvato!5e0!3m2!1sen!2sau!4v1613955246435!5m2!1sen!2sau" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
